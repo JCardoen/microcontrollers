@@ -13,6 +13,6 @@ void loop() {
   delay(2000);
   licht.uit();
   delay(2000);
-  licht.flits(120);
+  licht.flits(500);
   delay(2000);
 }
