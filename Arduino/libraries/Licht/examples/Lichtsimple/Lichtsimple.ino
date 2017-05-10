@@ -14,4 +14,5 @@ void loop() {
   licht.uit();
   delay(2000);
   licht.flits(120);
+  delay(2000);
 }

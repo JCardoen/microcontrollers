@@ -11,7 +11,8 @@ class Licht
     void aan();
     void uit();
     void flits(int vertraag);
-    boolean leesKnop(int knop);
+    boolean leesKnop();
+    void toggle();
   private:
     int _pin;
     int _vertaag;

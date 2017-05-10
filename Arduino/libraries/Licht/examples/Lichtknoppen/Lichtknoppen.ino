@@ -1,6 +1,9 @@
 #include <Licht.h>
 
-Licht licht(4);
+Licht led(4);
+Licht knop1(9);
+Licht knop2(10);
+Licht knop3(11);
 
 void setup() {
   // put your setup code here, to run once:
@@ -9,16 +12,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if(licht.leesKnop(9)) {
-    licht.aan();
-  }
-
-  if(licht.leesKnop(10)) {
-    licht.uit();
-  }
-
-  if(licht.leesKnop(11)) {
-    licht.flits(50);
-  }
-  
+  if(knop1.leesKnop()) {
+    led.toggle();
+  }  
 }
